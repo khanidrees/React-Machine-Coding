@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 
+interface Props{
+    tabList: Tab[]
+}
+type Tab =  {
+    label: string,
+    content: FC
+}
 
-const TabView = ({tabList}) => {
+const TabView = ({ tabList } : Props) => {
     const [currentTab, setCurrentTab] = useState(0);
     console.log(tabList[currentTab]?.content);
     return (
