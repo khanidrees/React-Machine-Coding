@@ -24,7 +24,7 @@ function App() {
     if(isRunning){
       timer.current = setInterval(()=>{
         setTimeElapsed( new Date() - startDate )
-      },1000); 
+      },100); 
     }else{
       clearInterval(timer.current);
       setPastTime((p)=> p+timeElapsed);
