@@ -1,10 +1,10 @@
 import StarComponent from "./components/StarComponent";
 import "./styles.css";
 
-export default function App() {
+export default function App({}) {
   return (
     <div className="App">
-      <StarComponent />
+      <StarComponent starCount={5} />
     </div>
   );
 }
