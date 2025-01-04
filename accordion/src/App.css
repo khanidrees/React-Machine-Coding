@@ -1,0 +1,33 @@
+
+
+.container{
+  width: 400px;
+  padding: 20px;
+  height: 25px;
+  overflow: hidden;
+  transition: all .3s  ease-in;
+}
+
+.container[data-expanded="true"]{
+  height: 250px;
+}
+
+.accordion-header{
+  background-color: aquamarine;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.accordion-body{
+  /* height: 100%; */
+  overflow: auto;
+  background-color: rgb(34, 237, 169);
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 10px;
+  height: 190px;
+}
+
+
+
+
