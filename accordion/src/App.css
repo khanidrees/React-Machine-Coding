@@ -13,9 +13,20 @@
 }
 
 .accordion-header{
+  width: 100%;
   background-color: aquamarine;
   padding: 8px;
   border-radius: 8px;
+  border: none;
+}
+
+/* .accordion-header:focus{
+  border: none;
+} */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .accordion-body{
