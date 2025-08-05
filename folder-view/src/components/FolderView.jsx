@@ -1,4 +1,3 @@
-import React from 'react'
 import './FolderView.css';
 import { useState } from 'react';
 
@@ -6,13 +5,13 @@ const FolderView = ({data,depth=0}) => {
     const [toggleArr, setToggleArr] = useState(Array?.from({length:data?.length}).fill(false));
     console.log(toggleArr);
     const toggleFolder = (idx)=>{
-        const newArr = toggleArr;
+        const newArr = [...toggleArr];
         newArr[idx] = !newArr[idx];
         console.log(newArr);
         setToggleArr(newArr);
     }
   return (
-    <div>
+    <div style={{}}>
         {data?.map((folder, idx)=>{
             const isParent = Array?.isArray(folder?.children) && folder?.children?.length>0;
             return (<div key={idx}>

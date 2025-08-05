@@ -54,10 +54,10 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div style={{display:'flex', justifyContent:'center',flexDirection:'column', alignItems:'center'}}>
       <h2>Folder View</h2>
       <FolderView data={data} depth={0}/>
-    </>
+    </div>
   )
 }
 
