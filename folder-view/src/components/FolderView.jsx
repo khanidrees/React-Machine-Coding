@@ -1,7 +1,7 @@
 import './FolderView.css';
 import { useState } from 'react';
 
-const FolderView = ({data,depth=0}) => {
+const FolderView = ({ data,depth=0 }) => {
     const [toggleArr, setToggleArr] = useState(Array?.from({length:data?.length}).fill(false));
     console.log(toggleArr);
     const toggleFolder = (idx)=>{
